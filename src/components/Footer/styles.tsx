@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const FooterBase = styled.footer`
   background: var(--background);
@@ -17,7 +17,7 @@ export const FooterBase = styled.footer`
   @media (max-width: 800px) {
     margin-bottom: 50px;
   }
-`
+`;
 
 export const Logo = styled.img`
   width: auto;
@@ -27,4 +27,4 @@ export const Logo = styled.img`
   &:hover {
     cursor: pointer;
   }
-`
+`;
