@@ -2,7 +2,9 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { VideoProps } from 'interfaces';
 
-const URL_VIDEOS = `http://localhost:8080/videos`;
+const URL_VIDEOS = `${
+  process.env.URL_BACKEND || 'http://localhost:8080'
+}/videos`;
 
 const create = async (video: VideoProps) => {
   const response = await fetch(`${URL_VIDEOS}`, {

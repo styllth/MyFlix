@@ -2,7 +2,9 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import { CategoryProps } from 'interfaces';
 
-const URL_CATEGORIES = `http://localhost:8080/categories`;
+const URL_CATEGORIES = `${
+  process.env.URL_BACKEND || 'http://localhost:8080'
+}/categories`;
 
 const create = async (category: CategoryProps) => {
   return fetch(`${URL_CATEGORIES}`, {

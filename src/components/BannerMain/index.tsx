@@ -1,14 +1,10 @@
-import React from 'react';
-
+import { getYouTubeId } from '../../helpers';
 import VideoIframeResponsive from './components/VideoIframeResponsive';
-
 import {
   BannerMainContainer,
   ContentAreaContainer,
   WatchButton,
 } from './styles';
-
-import { getYouTubeId } from '../../helpers';
 
 interface BannerMainProps {
   videoTitle: string;

@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
 import SlickSlider from 'react-slick';
+
 import styled from 'styled-components';
 
 const Container = styled.ul`
@@ -88,11 +88,7 @@ export const SliderItem = styled.li`
   }
 `;
 
-type SliderProps = {
-  children: ReactNode;
-};
-
-const Slider = ({ children }: SliderProps) => (
+const Slider: React.FC = ({ children }) => (
   <Container>
     <SlickSlider
       {...{

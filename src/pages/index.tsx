@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import { useFetchSWR } from 'hooks/useFetch';
 
@@ -11,9 +11,12 @@ import { CategoryProps } from 'interfaces';
 
 const Home: React.FC = () => {
   const { data } = useFetchSWR<CategoryProps[]>(
-    'http://localhost:8080/categories?_embed=videos',
+    `${
+      process.env.URL_BACKEND || 'http://localhost:8080'
+    }/categories?_embed=videos`,
   );
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [highlight, setHighlight] = useState<number>(-1);
 
   if (!data) return <Loading />;

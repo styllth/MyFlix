@@ -192,6 +192,12 @@
       "title": "Variaveis de Ambiente",
       "url": "https://www.youtube.com/watch?v=BP2KQtCyzo8",
       "categoryId": 2
+    },
+    {
+      "id": 26,
+      "title": "Um júnior já deveria saber como reduzir a quantidade de IFs de um código (e você, sabe?)",
+      "url": "https://www.youtube.com/watch?v=Lf3ZV0UsnEo",
+      "categoryId": 1
     }
   ]
 }
